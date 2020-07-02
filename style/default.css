@@ -304,7 +304,7 @@ a.gitment-editor-logout-link:hover {
 .gitment-editor-body textarea {
     display: block;
     width: 100%;
-    min-height: 150px;
+    min-height: 10px;
     max-height: 500px;
     padding: 16px;
     resize: vertical;
