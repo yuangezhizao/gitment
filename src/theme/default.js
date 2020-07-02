@@ -206,7 +206,8 @@ function renderEditor({user, error}, instance) {
     container.lang = "en-US"
     container.className = 'gitment-container gitment-editor-container'
 
-    const shouldDisable = user.login && !error ? '' : 'disabled'
+    // const shouldDisable = user.login && !error ? '' : 'disabled'
+    const shouldDisable = 'disabled'
     const disabledTip = user.login ? '' : 'Login to Comment'
     container.innerHTML = `
       ${user.login
@@ -237,7 +238,7 @@ function renderEditor({user, error}, instance) {
       </div>
       <div class="gitment-editor-body">
         <div class="gitment-editor-write-field">
-          <textarea placeholder="Leave a comment" title="${disabledTip}" ${shouldDisable}></textarea>
+          <textarea placeholder="Gitment 评论区已关闭" title="${disabledTip}" ${shouldDisable}></textarea>
         </div>
         <div class="gitment-editor-preview-field gitment-hidden">
           <div class="gitment-editor-preview gitment-markdown"></div>
